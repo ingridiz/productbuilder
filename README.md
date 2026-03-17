@@ -28,6 +28,16 @@ Skill focada na fase de entrega de produto:
 
 > **Link direto:** [PM Delivery SKILL.md](https://github.com/ingridiz/productbuilder/blob/main/.agents/skills/pm-delivery/SKILL.md)
 
+### 3. PM Discovery & Delivery (Completa)
+
+Skill unificada que cobre o ciclo completo de produto — discovery e delivery em um único arquivo:
+
+- Todas as etapas de Discovery (1-5) + Delivery (6-8) integradas
+- Templates completos para cada fase do ciclo
+- Instruções de comportamento para o Claude atuar como parceiro estratégico
+
+> **Link direto:** [PM Discovery & Delivery SKILL.md](https://github.com/ingridiz/productbuilder/blob/main/.claude/skills/pm-discovery-delivery.md)
+
 ---
 
 ## Como usar no Claude
@@ -37,7 +47,15 @@ Skill focada na fase de entrega de produto:
 3. No [Claude](https://claude.ai), crie um **Project** e cole o conteúdo em **Custom Instructions** ou **Project Knowledge**
 4. Pronto! O Claude vai atuar como parceiro estratégico de produto em todas as conversas dentro desse projeto
 
-Você pode usar apenas uma skill ou ambas juntas, dependendo da sua necessidade.
+Você pode usar as skills separadas (Discovery e Delivery) ou a versão completa unificada, dependendo da sua necessidade.
+
+### Exemplos de uso
+
+- *"Quero entender o problema"* — Guia pelo processo de entrevistas e mapeamento de dores
+- *"Preciso priorizar"* — Utilize os frameworks RICE, ICE ou MoSCoW para ranquear iniciativas
+- *"Como escrever uma user story"* — Templates prontos com critérios de aceite
+- *"Definir OKR"* — Estruture objetivos e key results de forma prática
+- *"Montar um MVP"* — Defina hipóteses, premissas e experimentos para validação
 
 ---
 
@@ -45,11 +63,29 @@ Você pode usar apenas uma skill ou ambas juntas, dependendo da sua necessidade.
 
 ```
 DISCOVERY (pm-discovery)           DELIVERY (pm-delivery)
-  1. Entendimento do Problema        1. Documentação de Produto
-  2. Mapeamento de Oportunidades     2. Rituais de Delivery
-  3. Geração de Hipóteses            3. Medição e Aprendizado
+  1. Entendimento do Problema        6. Documentação de Produto
+  2. Mapeamento de Oportunidades     7. Rituais de Delivery
+  3. Geração de Hipóteses            8. Medição e Aprendizado
   4. Priorização
   5. Validação
+```
+
+---
+
+## Estrutura do repositório
+
+```
+productbuilder/
+  .agents/
+    skills/
+      pm-discovery/
+        SKILL.md                     # Skill de Discovery (separada)
+      pm-delivery/
+        SKILL.md                     # Skill de Delivery (separada)
+  .claude/
+    skills/
+      pm-discovery-delivery.md       # Skill completa (Discovery + Delivery)
+  README.md
 ```
 
 ---
