@@ -1,21 +1,15 @@
 ---
 name: pm-discovery-delivery
 description: >
-  Use esta skill sempre que o usuário precisar de orientação em qualquer etapa
-  do fluxo de produto — desde a descoberta de problemas até a entrega de
-  funcionalidades. Acione esta skill para: estruturar e conduzir sessões de
-  discovery (entrevistas com usuários, árvore de oportunidades, mapeamento de
-  jobs-to-be-done), priorizar iniciativas com frameworks como RICE, ICE ou
-  MoSCoW, criar documentos de produto (PRD, user stories, critérios de aceite,
-  one-pagers), planejar rituais de delivery (refinamento, sprint planning,
-  revisão, retrospectiva), definir e acompanhar métricas de sucesso (North Star,
-  guardrails, métricas de funcionalidade), e conectar discovery com delivery de
-  forma contínua. Acione também quando o usuário mencionar: "quero entender o
-  problema", "preciso priorizar", "como escrever uma user story", "definir OKR",
-  "mapear hipóteses", "alinhar com stakeholders", "estruturar um roadmap",
-  "montar um MVP", "definir critérios de sucesso" ou qualquer variação dessas
-  intenções. Esta skill cobre o ciclo completo: problema → oportunidade →
-  solução → hipótese → teste → aprendizado → entrega → medição.
+  Use esta skill para orientar qualquer etapa do fluxo de produto, da descoberta
+  à entrega. Cobre: discovery (entrevistas, árvore de oportunidades, JTBD),
+  priorização (RICE, ICE, MoSCoW), documentação (PRD, user stories, one-pagers),
+  rituais de delivery (refinamento, planning, review, retro), métricas (North
+  Star, guardrails, OKRs) e conexão contínua entre discovery e delivery. Acione
+  quando o usuário mencionar: entender problema, priorizar, escrever user story,
+  definir OKR, mapear hipóteses, alinhar stakeholders, estruturar roadmap,
+  montar MVP ou definir critérios de sucesso. Ciclo completo: problema →
+  oportunidade → solução → hipótese → teste → aprendizado → entrega → medição.
 ---
 
 # PM Discovery & Delivery Skill
