@@ -1,83 +1,101 @@
-# Product Builder
+# ProductBuilder
 
-Repositorio de skills e ferramentas para Product Managers que desejam estruturar e conduzir o ciclo completo de produto — da descoberta de problemas a entrega e medicao de resultados.
-
----
-
-## O que e este projeto?
-
-O **Product Builder** e uma colecao de skills projetadas para auxiliar Product Managers em todas as etapas do fluxo de produto. Ele funciona como um guia pratico e estrategico, oferecendo templates, frameworks e boas praticas para cada fase do ciclo de desenvolvimento de produto.
+Ferramentas e skills para Product Managers que querem estruturar seu fluxo de produto — da descoberta à entrega.
 
 ---
 
-## Skill disponivel
+## Skills Disponíveis
 
-### PM Discovery & Delivery
+### 1. PM Discovery
 
-Skill completa que cobre o ciclo de produto de ponta a ponta:
+Skill focada na fase de descoberta de produto:
 
-**Discovery**
-1. **Entendimento do Problema** — Entrevistas com usuarios, JTBD, mapa de dores e ganhos
-2. **Mapeamento de Oportunidades** — Arvore de Oportunidades (OST), HMW, benchmark
-3. **Geracao de Hipoteses** — Brainstorming estruturado, premissas, definicao de MVP
-4. **Priorizacao** — RICE, ICE, MoSCoW, roadmap estrategico
-5. **Validacao** — Testes de usabilidade, experimentos A/B, aprendizados documentados
+- Entendimento do problema (entrevistas com usuários, JTBD, mapa de dores)
+- Mapeamento de oportunidades (árvore de oportunidades, HMW, benchmark)
+- Geração de hipóteses (premissas, MVP, experimentos)
+- Priorização (RICE, ICE, MoSCoW, roadmap)
+- Validação (testes de usabilidade, A/B, aprendizados)
 
-**Delivery**
-6. **Documentacao de Produto** — PRD, User Stories, criterios de aceite, one-pagers
-7. **Rituais de Delivery** — Refinamento, Sprint Planning, Review, Retrospectiva
-8. **Medicao e Aprendizado** — North Star Metric, OKRs, metricas de funcionalidade, guardrails
+> **Link direto:** [PM Discovery SKILL.md](https://github.com/ingridiz/productbuilder/blob/main/.agents/skills/pm-discovery/SKILL.md)
 
-> A skill esta localizada em: [`.claude/skills/pm-discovery-delivery.md`](.claude/skills/pm-discovery-delivery.md)
+### 2. PM Delivery
+
+Skill focada na fase de entrega de produto:
+
+- Documentação de produto (PRD, user stories, critérios de aceite, one-pagers)
+- Rituais de delivery (refinamento, sprint planning, review, retrospectiva)
+- Métricas e medição (North Star, guardrails, OKRs, relatório de impacto)
+
+> **Link direto:** [PM Delivery SKILL.md](https://github.com/ingridiz/productbuilder/blob/main/.agents/skills/pm-delivery/SKILL.md)
+
+### 3. PM Discovery & Delivery (Completa)
+
+Skill unificada que cobre o ciclo completo de produto — discovery e delivery em um único arquivo:
+
+- Todas as etapas de Discovery (1-5) + Delivery (6-8) integradas
+- Templates completos para cada fase do ciclo
+- Instruções de comportamento para o Claude atuar como parceiro estratégico
+
+> **Link direto:** [PM Discovery & Delivery SKILL.md](https://github.com/ingridiz/productbuilder/blob/main/.claude/skills/pm-discovery-delivery.md)
 
 ---
 
-## Frameworks e referencias
+## Como usar no Claude
 
-Este projeto e fundamentado em:
+1. Acesse o link da skill desejada acima
+2. Copie o conteúdo completo do arquivo
+3. No [Claude](https://claude.ai), crie um **Project** e cole o conteúdo em **Custom Instructions** ou **Project Knowledge**
+4. Pronto! O Claude vai atuar como parceiro estratégico de produto em todas as conversas dentro desse projeto
 
-- **Continuous Discovery Habits** — Teresa Torres (OST, entrevistas continuas)
-- **Inspired** — Marty Cagan (product sense, discovery vs. delivery)
-- **The Mom Test** — Rob Fitzpatrick (entrevistas sem vies)
-- **Lean Analytics** — Croll & Yoskovitz (metricas e North Star)
-- **Shape Up** — Basecamp (ciclos de entrega, appetite)
-
----
-
-## Como usar
-
-1. Clone este repositorio
-2. Utilize a skill `pm-discovery-delivery` no Claude para obter orientacao em qualquer etapa do fluxo de produto
-3. Siga os templates e frameworks disponibilizados para gerar outputs prontos para uso
+Você pode usar as skills separadas (Discovery e Delivery) ou a versão completa unificada, dependendo da sua necessidade.
 
 ### Exemplos de uso
 
-- *"Quero entender o problema"* — A skill guia voce pelo processo de entrevistas e mapeamento de dores
+- *"Quero entender o problema"* — Guia pelo processo de entrevistas e mapeamento de dores
 - *"Preciso priorizar"* — Utilize os frameworks RICE, ICE ou MoSCoW para ranquear iniciativas
-- *"Como escrever uma user story"* — Obtenha templates prontos com criterios de aceite
-- *"Definir OKR"* — Estruture objetivos e key results de forma pratica
-- *"Montar um MVP"* — Defina hipoteses, premissas e experimentos para validacao
+- *"Como escrever uma user story"* — Templates prontos com critérios de aceite
+- *"Definir OKR"* — Estruture objetivos e key results de forma prática
+- *"Montar um MVP"* — Defina hipóteses, premissas e experimentos para validação
 
 ---
 
-## Estrutura do repositorio
+## Etapas cobertas
+
+```
+DISCOVERY (pm-discovery)           DELIVERY (pm-delivery)
+  1. Entendimento do Problema        6. Documentação de Produto
+  2. Mapeamento de Oportunidades     7. Rituais de Delivery
+  3. Geração de Hipóteses            8. Medição e Aprendizado
+  4. Priorização
+  5. Validação
+```
+
+---
+
+## Estrutura do repositório
 
 ```
 productbuilder/
+  .agents/
+    skills/
+      pm-discovery/
+        SKILL.md                     # Skill de Discovery (separada)
+      pm-delivery/
+        SKILL.md                     # Skill de Delivery (separada)
   .claude/
     skills/
-      pm-discovery-delivery.md   # Skill principal de Discovery & Delivery
-  README.md                      # Este arquivo
+      pm-discovery-delivery.md       # Skill completa (Discovery + Delivery)
+  README.md
 ```
 
 ---
 
-## Contribuicao
+## Referências
 
-Contribuicoes sao bem-vindas! Sinta-se a vontade para abrir issues ou pull requests com sugestoes de novos templates, frameworks ou melhorias nas skills existentes.
+Baseado em frameworks de:
 
----
-
-## Licenca
-
-Este projeto esta disponivel para uso livre. Consulte os termos de licenca do repositorio para mais detalhes.
+- *Continuous Discovery Habits* — Teresa Torres
+- *Inspired* — Marty Cagan
+- *The Mom Test* — Rob Fitzpatrick
+- *Lean Analytics* — Croll & Yoskovitz
+- *Shape Up* — Basecamp
